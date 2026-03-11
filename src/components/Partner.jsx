@@ -1,48 +1,68 @@
-import React from 'react'
-import { FaFacebook, FaWhatsapp, FaGoogle, FaTwitter, FaAmazon, FaApple, FaMicrosoft } from 'react-icons/fa6'
+import React from "react";
+import {
+  FaFacebook,
+  FaWhatsapp,
+  FaGoogle,
+  FaTwitter,
+  FaAmazon,
+  FaApple,
+  FaMicrosoft,
+} from "react-icons/fa6";
 
 export default function Partner() {
   return (
-    <div className="flex flex-col items-center justify-center py-16 bg-gray-50">
+    <section className="py-24 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
 
-      {/* Heading */}
-      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-        Trusted by our <span className="text-blue-600">Partners</span>
-      </h1>
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
+            Trusted by our{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+              Partners
+            </span>
+          </h2>
 
-      {/* Icons */}
-      <div className="flex flex-wrap justify-center gap-6">
-
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-blue-500 hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaMicrosoft size={20}/>
+          <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+            We collaborate with leading global companies to deliver
+            innovative and reliable digital solutions.
+          </p>
         </div>
 
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-green-500 hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaWhatsapp size={20}/>
-        </div>
+        {/* Partners Icons */}
+        <div className="flex flex-wrap items-center justify-center gap-8">
 
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-blue-600 hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaFacebook size={20}/>
-        </div>
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-blue-600 cursor-pointer">
+            <FaMicrosoft size={24} />
+          </div>
 
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-sky-500 hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaTwitter size={20}/>
-        </div>
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-green-500 cursor-pointer">
+            <FaWhatsapp size={24} />
+          </div>
 
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-black hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaApple size={20}/>
-        </div>
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-blue-600 cursor-pointer">
+            <FaFacebook size={24} />
+          </div>
 
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-orange-500 hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaAmazon size={20}/>
-        </div>
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-sky-500 cursor-pointer">
+            <FaTwitter size={24} />
+          </div>
 
-        <div className="w-14 h-14 flex items-center justify-center border rounded-full shadow-md hover:bg-red-500 hover:text-white hover:scale-110 transition duration-300 cursor-pointer">
-          <FaGoogle size={20}/>
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-black cursor-pointer">
+            <FaApple size={24} />
+          </div>
+
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-orange-500 cursor-pointer">
+            <FaAmazon size={24} />
+          </div>
+
+          <div className="w-16 h-16 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-gray-700 hover:text-red-500 cursor-pointer">
+            <FaGoogle size={24} />
+          </div>
+
         </div>
 
       </div>
-
-    </div>
-  )
+    </section>
+  );
 }

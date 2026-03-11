@@ -1,54 +1,64 @@
-import React from 'react'
-import {assets} from "../assets/assets.js"
+import React from "react";
+import { assets } from "../assets/assets.js";
 
 export default function Hero() {
   return (
+    <section className="w-full py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
 
-    //parent div for new section to consume all the contents...
-    <div className='w-full py-40 border-0'>
-        <div className="container mx-auto px-6 ">
+        {/* Trusted badge */}
+        <div className="flex items-center justify-center gap-4 w-fit mx-auto mb-10 bg-amber-100 px-5 py-2 rounded-full shadow-sm">
+          
+          <div className="flex -space-x-3">
+            <img className="w-10 h-10 rounded-full border-2 border-white object-cover" src={assets.profile1Img} alt="" />
+            <img className="w-10 h-10 rounded-full border-2 border-white object-cover" src={assets.profile2Img} alt="" />
+            <img className="w-10 h-10 rounded-full border-2 border-white object-cover" src={assets.profile3Img} alt="" />
+            <img className="w-10 h-10 rounded-full border-2 border-white object-cover" src={assets.profile4Img} alt="" />
+          </div>
 
-        <div className='flex items-center justify-center gap-6 w-auto mb-10 mx-auto bg-amber-400 py-2 pl-2 rounded-full md:w-[25%]'>
-
-        <div className='flex items-center -space-x-3 '>
-            <img className='w-10 h-10 rounded-full object-cover object-center' src={assets.profile1Img} alt="" /> 
-            <img className='w-10 h-10 rounded-full object-cover object-center' src={assets.profile2Img} alt="" /> 
-            <img className='w-10 h-10 rounded-full object-cover object-center' src={assets.profile3Img} alt="" /> 
-            <img className='w-10 h-10 rounded-full object-cover object-center' src={assets.profile4Img} alt="" /> 
-        </div>
-        <span>Trusted by 10k+ clients</span>
-</div>
-
-{/* Paragraph */}
-<h1 className='text-center text-black/50 text-4xl mb-8 sm:text-5xl md:text-6xl lg:text-7xl'>
-  We Grow brands with
-  <br />
-  <span className='text-amber-300'>performance</span> strategy
-</h1>
-
-{/* paragraph */}
-<p className='text-center max-w-xl mx-auto font-semibold mb-8'>
-  we take pride that deliver the products which contains Creativity, Strategy, and technology.
-</p>
-
-{/* Buttons -> 2 */}
-<div className='flex items-center justify-center gap-8'>
-  <button className='p-3 bg-amber-300 rounded-full font-semibold hover:scale-105 duration-100 transition cursor-pointer'>
-    Contact us
-  </button>
-
-  <button className='p-3 bg-cyan-950 text-white rounded-full font-semibold hover:scale-105 duration-100 transition cursor-pointer'>
-    Feedback
-  </button>
-</div>
-
-        <div className='mt-15 mx-w-5xl mx-auto shadow-overflow-hidden rounded-2xl'>
-            <img className='w-full h-full object-center' src={assets.heroImg} alt="" />
+          <span className="text-sm font-semibold text-gray-700">
+            Trusted by 10k+ clients
+          </span>
         </div>
 
+        {/* Heading */}
+        <h1 className="text-center font-bold text-gray-800 text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-8">
+          We Grow Brands With
+          <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+            Performance Strategy
+          </span>
+        </h1>
+
+        {/* Paragraph */}
+        <p className="text-center max-w-2xl mx-auto text-gray-600 text-lg mb-10">
+          We take pride in delivering products that combine creativity,
+          strategy, and technology to grow your business faster.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex items-center justify-center gap-6 mb-16">
+
+          <button className="px-6 py-3 bg-amber-400 text-black font-semibold rounded-full shadow-md hover:bg-amber-500 hover:scale-105 transition duration-200">
+            Contact Us
+          </button>
+
+          <button className="px-6 py-3 bg-gray-900 text-white font-semibold rounded-full shadow-md hover:bg-black hover:scale-105 transition duration-200">
+            Feedback
+          </button>
+
         </div>
 
-      
-    </div>
-  )
+        {/* Hero Image */}
+        <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+          <img
+            className="w-full object-cover"
+            src={assets.heroImg}
+            alt="hero"
+          />
+        </div>
+
+      </div>
+    </section>
+  );
 }
