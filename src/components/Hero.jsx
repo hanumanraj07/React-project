@@ -8,7 +8,7 @@ export default function Hero() {
     <div className='w-full py-40 border-0'>
         <div className="container mx-auto px-6 ">
 
-        <div className='flex items-center justify-center gap-6 w-auto mx-auto bg-amber-400 py-2 pl-2 rounded-full md:w-[25%]'>
+        <div className='flex items-center justify-center gap-6 w-auto mb-10 mx-auto bg-amber-400 py-2 pl-2 rounded-full md:w-[25%]'>
 
         <div className='flex items-center -space-x-3 '>
             <img className='w-10 h-10 rounded-full object-cover object-center' src={assets.profile1Img} alt="" /> 
